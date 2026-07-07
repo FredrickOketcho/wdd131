@@ -117,6 +117,8 @@ main {
 
 
 .card {
+    width: auto;
+    max-width: 700px;
     background-color: var(--secondary-color);
     border: 1px solid rgba(72, 169, 166, 0.35);
     border-radius: 14px;
@@ -138,9 +140,6 @@ main {
 
 .card ul {
     margin-top: 1rem;
-}
-
-.card ul {
     list-style: none;
 }
 
