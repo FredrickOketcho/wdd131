@@ -1,8 +1,14 @@
 :root {
-    --primary-color: #1a4f63;       
-    --secondary-color: rgba(255,255,255,0.93);    
-    --accent-color: #48a9a6;     
-    --text-color: #1f2937;          
+    --primary-color: #1a4f63;
+    --background-color: #ffffff;
+    --secondary-color: rgba(255,255,255,0.95);
+    --secondary-color-alt: rgba(255,255,255,0.92);
+    --card-border: rgba(72, 169, 166, 0.35);
+    --card-border-alt: rgba(255, 255, 255, 0.85);
+    --accent-color: #48a9a6;
+    --text-color: #1f2937;
+    --text-muted: #2f4858;
+    --text-label: #103744;
     --heading-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --body-font: Arial, sans-serif;
 }
@@ -33,7 +39,7 @@ body {
     font-family: var(--body-font);
     color: var(--text-color);
     line-height: 1.6;
-    background-color: #ffffff;
+    background-color: var(--background-color);
 }
 
 
@@ -45,7 +51,7 @@ header, footer {
     width: 100%;
     box-sizing: border-box;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--background-color);
     text-align: center;
     padding: 1.5rem;
 }
@@ -105,8 +111,8 @@ main {
     width: auto;
     max-width: 700px;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.95);
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: var(--secondary-color);
+    border: 1px solid var(--card-border-alt);
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
@@ -120,7 +126,7 @@ main {
     width: auto;
     max-width: 700px;
     background-color: var(--secondary-color);
-    border: 1px solid rgba(72, 169, 166, 0.35);
+    border: 1px solid var(--card-border);
     border-radius: 14px;
     padding: 1.5rem;
     box-shadow: 0 12px 28px rgba(0,0,0,0.12);
@@ -129,7 +135,7 @@ main {
 
 .card h2 {
     font-family: var(--heading-font);
-    color: white;
+    color: var(--background-color);
     margin-bottom: 1rem;
     background-color: var(--accent-color);
     padding: 0.8rem 1rem;
@@ -152,11 +158,11 @@ main {
 
 .label {
     font-weight: 700;
-    color: #103744;
+    color: var(--text-label);
 }
 
 .value {
-    color: #2f4858;
+    color: var(--text-muted);
 }
 
 
