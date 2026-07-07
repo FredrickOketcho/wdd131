@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Uganda</title>
+    <meta name="description" content="An informational page about Uganda featuring local facts and current weather conditions.">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Uganda</h1>
+    </header>
+
+    <main>
+        <div class="hero-container">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1200px)">
+                <img src="images/hero-small.webp" srcset="images/hero-small.webp 600w, images/hero-large.webp 1200w" sizes="100vw" alt="Beautiful landscape of Uganda" loading="lazy">
+            </picture>
+ 
+            <section class="card data-card">
+                <h2>Data</h2>
+                <ul>
+                    <li><span class="label">Area:</span> <span class="value">587,041 sq km</span></li>
+                    <li><span class="label">Population:</span> <span class="value">28.4 Million</span></li>
+                    <li><span class="label">Capital:</span> <span class="value">Kampala</span></li>
+                    <li><span class="label">Language:</span> <span class="value">English, Swahili</span></li>
+                    <li><span class="label">Currency:</span> <span class="value">Uganda Shilling</span></li>
+                    <li><span class="label">Time Zone:</span> <span class="value">UTC+3</span></li>
+                    <li><span class="label">Calling Code:</span> <span class="value">+256</span></li>
+                    <li><span class="label">Internet TLD:</span> <span class="value">.ug</span></li>
+                </ul>
+            </section>
+
+            <section class="card weather-card">
+                <h2>Weather</h2>
+                <ul>
+                    <li><span class="label">Temperature:</span> <span class="value" id="temp">8 °C</span></li>
+                    <li><span class="label">Conditions:</span> <span class="value">Partly Cloudy</span></li>
+                    <li><span class="label">Wind:</span> <span class="value" id="wind">12 km/h</span></li>
+                    <li><span class="label">Wind Chill:</span> <span class="value" id="wind-chill">N/A</span></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Fredrick Oketcho | Uganda</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
