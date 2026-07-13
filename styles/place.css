@@ -132,7 +132,7 @@ main {
     font-family: var(--heading-font);
     color: var(--background-color);
     margin-bottom: 1rem;
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     padding: 0.8rem 1rem;
     border-radius: 8px;
     display: inline-block;
@@ -166,6 +166,7 @@ main {
     width: 64px;
     height: 64px;
     margin: 0 auto 1rem auto;
+    background: url('../images/weather-icon.svg') no-repeat center/contain;
 }
 
 
