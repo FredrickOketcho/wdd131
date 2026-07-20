@@ -1,0 +1,43 @@
+/* ======================================
+   WDD 131 - Temple Album
+   Desktop Styles (768px and larger)
+====================================== */
+
+@media (min-width: 768px) {
+
+    /* Hide the hamburger menu */
+    #menu {
+        display: none;
+    }
+
+    /* Keep the header on one line */
+    header {
+        flex-wrap: nowrap;
+    }
+
+    /* Display navigation horizontally */
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: auto;
+        margin-top: 0;
+        gap: 1rem;
+    }
+
+    /* Navigation link spacing */
+    nav a {
+        padding: 0.75rem 1rem;
+    }
+
+    /* Center and widen the main content */
+    main {
+        max-width: 1200px;
+    }
+
+    /* Display gallery in three columns */
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
