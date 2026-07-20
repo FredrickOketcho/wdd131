@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Temple Album</title>
+    <title>Filtered Temple Album</title>
 
     <meta name="description" content="Responsive Temple Picture Album for WDD 131 Dynamic Web Fundamentals">
     <meta name="author" content="Fredrick Oketcho">
@@ -16,7 +16,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles/filtered-temples.css">
-    <link rel="stylesheet" href="styles/filtered-temple-large.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
 
     <!-- JavaScript -->
     <script src="scripts/filtered-temples.js" defer></script>
@@ -25,25 +25,26 @@
 <body>
 
 <header>
-    <!-- Change h2 to h1 -->
-    <h1>Temple Album</h1>
 
-    <button id="menu" aria-label="Toggle Navigation"></button>
+    <h2>Temple Album</h2>
 
-    <nav id="main-nav">
+    <button id="menu" type="button" aria-label="Toggle navigation" aria-expanded="false"></button>
+
+    <nav id="main-nav" aria-label="Temple filters">
         <a href="#" data-filter="home">Home</a>
         <a href="#" data-filter="old">Old</a>
         <a href="#" data-filter="new">New</a>
         <a href="#" data-filter="large">Large</a>
         <a href="#" data-filter="small">Small</a>
     </nav>
+
 </header>
 
 <main>
-    <!-- Change h1 to h2 to maintain correct heading hierarchy -->
-    <h2>Temple Gallery</h2>
+    <h1>Temple Gallery</h1>
     <div class="gallery-grid"></div>
 </main>
+
 <footer>
     <p>&copy; <span id="currentyear"></span> | Fredrick Oketcho | Uganda</p>
     <p id="lastModified"></p>

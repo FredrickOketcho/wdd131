@@ -1,0 +1,15 @@
+@media (min-width: 768px) {
+    #menu { display: none; }
+
+    header { flex-wrap: nowrap; }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        gap: .5rem;
+        margin: 0;
+        width: auto;
+    }
+
+    .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+}
