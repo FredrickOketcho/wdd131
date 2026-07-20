@@ -1,0 +1,45 @@
+:root {
+  --navy: #12355b;
+  --gold: #f4b942;
+  --cloud: #f7f9fc;
+  --slate: #334155;
+  --white: #ffffff;
+  --heading-font: "Montserrat", Arial, sans-serif;
+  --body-font: "Open Sans", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; color: var(--slate); background: var(--cloud); font-family: var(--body-font); line-height: 1.65; }
+.site-header { padding: 2.5rem 1.25rem; color: var(--white); background: var(--navy); }
+.brand, main, footer { max-width: 1050px; margin: 0 auto; }
+.brand { display: flex; align-items: center; gap: 1rem; }
+.logo { display: grid; width: 64px; height: 64px; place-items: center; border: 5px solid var(--gold); border-radius: 50%; color: var(--gold); font: 700 2rem/1 var(--heading-font); }
+.eyebrow { margin: 0; color: var(--gold); font: 600 .78rem/1 var(--heading-font); letter-spacing: .1em; text-transform: uppercase; }
+h1, h2, h3 { color: var(--navy); font-family: var(--heading-font); line-height: 1.2; }
+h1 { margin: .3rem 0 0; color: var(--white); font-size: clamp(1.7rem, 4vw, 2.5rem); }
+h2 { margin-top: 0; font-size: 1.55rem; }
+h3 { margin: 0 0 .4rem; font-size: 1rem; }
+.tagline { max-width: 1050px; margin: 1rem auto 0; color: #dbeafe; }
+main { padding: 1.25rem; }
+section { margin: 1.25rem 0; padding: 1.5rem; background: var(--white); border-radius: .5rem; box-shadow: 0 2px 8px #12355b12; }
+p { margin: .6rem 0; }
+.scenarios, .type-samples { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+.scenarios article, .type-samples > div { padding: 1rem; border-left: 5px solid var(--gold); background: #fffaf0; }
+.palette { display: grid; gap: .75rem; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); margin-top: 1rem; }
+.swatch { min-height: 145px; padding: 1rem; border-radius: .35rem; }
+.swatch p { font-weight: 700; }.swatch small { display: block; line-height: 1.35; }
+.navy { color: var(--white); background: var(--navy); }.navy h3 { color: var(--white); }
+.gold { background: var(--gold); }.cream { border: 1px solid #d8dee8; background: var(--cloud); }.slate { color: var(--white); background: var(--slate); }.slate h3 { color: var(--white); }
+.font-heading { font: 700 1.5rem var(--heading-font); color: var(--navy); }.font-body { font: 1.5rem var(--body-font); }
+.wireframes { display: grid; gap: 1.5rem; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); align-items: start; }
+figure { margin: 0; } figcaption { margin-bottom: .6rem; color: var(--navy); font: 700 1.05rem var(--heading-font); }
+.phone-frame, .desktop-frame { overflow: hidden; border: 4px solid var(--navy); background: var(--white); color: var(--slate); font: 600 .72rem/1.35 var(--heading-font); text-align: center; }
+.phone-frame { max-width: 260px; margin: auto; border-radius: 20px; }.desktop-frame { border-radius: 8px; }
+.wf-header { padding: .65rem; color: var(--white); background: var(--navy); }.wf-hero, .wf-desktop-hero { min-height: 125px; padding: 1rem; background: #c7d7e8; }.wf-hero { padding-top: 1.5rem; }.wf-block { min-height: 48px; margin: .45rem; padding: .9rem .4rem; background: #edf2f7; border: 1px solid #ccd6e0; }
+.wf-desktop-hero { display: flex; align-items: center; justify-content: space-around; min-height: 155px; }.booking-card { padding: .75rem; background: var(--white); border: 2px solid var(--gold); }.wf-columns { display: grid; gap: .45rem; grid-template-columns: repeat(3, 1fr); padding: .45rem; }.wf-columns div { min-height: 75px; padding: 1.2rem .35rem; background: #edf2f7; border: 1px solid #ccd6e0; }
+button { margin-top: .5rem; padding: .35rem .6rem; border: 0; border-radius: 2px; color: var(--navy); background: var(--gold); font: 700 .65rem var(--heading-font); }
+footer { max-width: none; padding: 1.25rem; color: var(--white); background: var(--navy); text-align: center; font-size: .9rem; }
+footer p { max-width: 1050px; margin: 0 auto; }
+
+@media (max-width: 650px) { .wireframes { grid-template-columns: 1fr; } .desktop-frame { font-size: .6rem; } .wf-desktop-hero { min-height: 120px; } section { padding: 1.1rem; } }
